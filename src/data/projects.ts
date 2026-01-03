@@ -1,9 +1,11 @@
 import { Project } from '@/components/ProjectCard';
 
 // Import evidence images
-import evidenceChapter2 from '@/assets/evidence-chapter2-trello.png';
-import evidenceChapter4 from '@/assets/evidence-chapter4-teams.png';
-import evidenceChapter5 from '@/assets/evidence-chapter5-final.png';
+import evidenceChapter1 from '@/assets/evidence-chapter1-chatgpt.png';
+import evidenceChapter2 from '@/assets/evidence-chapter2-notion.png';
+import evidenceChapter3 from '@/assets/evidence-chapter3-trello.png';
+import evidenceChapter4 from '@/assets/evidence-chapter4-teams-new.png';
+import evidenceChapter5 from '@/assets/evidence-chapter5-drive.png';
 import evidenceChapter6 from '@/assets/evidence-chapter6-drive.png';
 
 export const projects: Project[] = [
@@ -38,6 +40,8 @@ export const projects: Project[] = [
       'Kiểm tra ngữ pháp và văn phong',
     ],
     integrity: 'Tôi đã sử dụng AI như công cụ hỗ trợ tìm hiểu, nhưng toàn bộ nội dung được viết lại theo cách hiểu của bản thân. Không sao chép nguyên văn từ bất kỳ nguồn nào.',
+    evidenceImage: evidenceChapter1,
+    evidenceCaption: 'Sử dụng ChatGPT để hỗ trợ tìm hiểu về máy tính',
   },
   {
     id: '2',
@@ -71,7 +75,7 @@ export const projects: Project[] = [
     ],
     integrity: 'Mọi thông tin đều được kiểm chứng từ nhiều nguồn. AI chỉ được dùng để hỗ trợ hiểu nội dung, không thay thế việc đọc và phân tích của bản thân.',
     evidenceImage: evidenceChapter2,
-    evidenceCaption: 'Tiến độ làm việc và báo cáo nghiên cứu trên Trello',
+    evidenceCaption: 'Tổ chức thông tin và kế hoạch học tập trên Notion',
   },
   {
     id: '3',
@@ -104,6 +108,8 @@ export const projects: Project[] = [
       'Thảo luận về các quan điểm đạo đức',
     ],
     integrity: 'Trong bài về AI, tôi đặc biệt chú ý đến việc thể hiện suy nghĩ riêng. AI chỉ là nguồn tham khảo, quan điểm và đánh giá hoàn toàn do tôi đưa ra.',
+    evidenceImage: evidenceChapter3,
+    evidenceCaption: 'Quản lý tiến độ nghiên cứu AI trên Trello',
   },
   {
     id: '4',
@@ -171,7 +177,7 @@ export const projects: Project[] = [
     ],
     integrity: 'Tất cả thiết kế là sản phẩm của tôi. AI chỉ gợi ý ý tưởng ban đầu, còn việc thực hiện và quyết định thẩm mỹ hoàn toàn do tôi.',
     evidenceImage: evidenceChapter5,
-    evidenceCaption: 'Bản Final báo cáo nghiên cứu',
+    evidenceCaption: 'Tổ chức file và thư mục trên Google Drive',
   },
   {
     id: '6',
