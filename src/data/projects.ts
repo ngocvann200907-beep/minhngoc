@@ -1,5 +1,11 @@
 import { Project } from '@/components/ProjectCard';
 
+// Import evidence images
+import evidenceChapter2 from '@/assets/evidence-chapter2-trello.png';
+import evidenceChapter4 from '@/assets/evidence-chapter4-teams.png';
+import evidenceChapter5 from '@/assets/evidence-chapter5-final.png';
+import evidenceChapter6 from '@/assets/evidence-chapter6-drive.png';
+
 export const projects: Project[] = [
   {
     id: '1',
@@ -64,6 +70,8 @@ export const projects: Project[] = [
       'Giải thích các khái niệm chuyên ngành',
     ],
     integrity: 'Mọi thông tin đều được kiểm chứng từ nhiều nguồn. AI chỉ được dùng để hỗ trợ hiểu nội dung, không thay thế việc đọc và phân tích của bản thân.',
+    evidenceImage: evidenceChapter2,
+    evidenceCaption: 'Tiến độ làm việc và báo cáo nghiên cứu trên Trello',
   },
   {
     id: '3',
@@ -128,6 +136,8 @@ export const projects: Project[] = [
       'Tóm tắt nội dung cuộc họp',
     ],
     integrity: 'Trong làm việc nhóm, tôi cam kết đóng góp công bằng. AI chỉ hỗ trợ về mặt ngôn ngữ, không thay thế phần công việc được giao.',
+    evidenceImage: evidenceChapter4,
+    evidenceCaption: 'Giao tiếp và hợp tác qua Microsoft Teams',
   },
   {
     id: '5',
@@ -160,6 +170,8 @@ export const projects: Project[] = [
       'Đề xuất màu sắc và font chữ phù hợp',
     ],
     integrity: 'Tất cả thiết kế là sản phẩm của tôi. AI chỉ gợi ý ý tưởng ban đầu, còn việc thực hiện và quyết định thẩm mỹ hoàn toàn do tôi.',
+    evidenceImage: evidenceChapter5,
+    evidenceCaption: 'Bản Final báo cáo nghiên cứu',
   },
   {
     id: '6',
@@ -192,5 +204,7 @@ export const projects: Project[] = [
       'Hướng dẫn định dạng trích dẫn',
     ],
     integrity: 'Bài này đặc biệt quan trọng với tôi. Tôi cam kết luôn tuân thủ liêm chính học thuật, trích dẫn đầy đủ và không bao giờ đạo văn.',
+    evidenceImage: evidenceChapter6,
+    evidenceCaption: 'Tổ chức file và thư mục trên Google Drive',
   },
 ];

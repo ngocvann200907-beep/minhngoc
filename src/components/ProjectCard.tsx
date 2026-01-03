@@ -21,6 +21,8 @@ export interface Project {
   };
   aiUsage: string[];
   integrity: string;
+  evidenceImage?: string;
+  evidenceCaption?: string;
 }
 
 interface ProjectCardProps {
@@ -130,22 +132,37 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
               </div>
             </div>
 
-            {/* Evidence placeholder */}
+            {/* Evidence */}
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-foreground font-medium">
                 <ImageIcon className="w-4 h-4 text-primary" />
                 <span>Minh chứng học tập</span>
               </div>
               <div className="pl-6">
-                <div className="border-2 border-dashed border-border rounded-xl p-8 text-center bg-muted/30">
-                  <ImageIcon className="w-10 h-10 text-muted-foreground/50 mx-auto mb-3" />
-                  <p className="text-sm text-muted-foreground">
-                    Khu vực đăng minh chứng (ảnh, link, video...)
-                  </p>
-                  <p className="text-xs text-muted-foreground/70 mt-1">
-                    Sẽ được bổ sung sau
-                  </p>
-                </div>
+                {project.evidenceImage ? (
+                  <div className="rounded-xl overflow-hidden border border-border bg-muted/30">
+                    <img 
+                      src={project.evidenceImage} 
+                      alt={project.evidenceCaption || 'Minh chứng học tập'} 
+                      className="w-full h-auto max-h-[400px] object-contain"
+                    />
+                    {project.evidenceCaption && (
+                      <p className="text-sm text-muted-foreground text-center py-3 px-4 bg-muted/50 border-t border-border">
+                        {project.evidenceCaption}
+                      </p>
+                    )}
+                  </div>
+                ) : (
+                  <div className="border-2 border-dashed border-border rounded-xl p-8 text-center bg-muted/30">
+                    <ImageIcon className="w-10 h-10 text-muted-foreground/50 mx-auto mb-3" />
+                    <p className="text-sm text-muted-foreground">
+                      Khu vực đăng minh chứng (ảnh, link, video...)
+                    </p>
+                    <p className="text-xs text-muted-foreground/70 mt-1">
+                      Sẽ được bổ sung sau
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
 
